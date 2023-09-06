@@ -1,0 +1,6 @@
+<mvc:View 
+	xmlns:mvc="sap.ui.core.mvc" 
+	xmlns="sap.m"
+	height="100%">
+	<MessagePage icon="sap-icon://sys-cancel" text="Logon cancelled" description="Please re-enter the app to repeat the logon" />
+</mvc:View>

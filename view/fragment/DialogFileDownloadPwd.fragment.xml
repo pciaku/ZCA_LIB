@@ -1,0 +1,16 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:form="sap.ui.layout.form" xmlns:cc="com.knauf.ca.lib.controls">
+	<Dialog title="{i18n>dialogFileDownloadPwd.popUpTitle}" class="sapUiTinyMargin" contentWidth="{/contentWidth}">
+		<cc:MessageStripContainer items="{messages>/messages}">
+			<MessageStrip type="{messages>type}" text="{messages>description}" class="sapUiTinyMargin"/>
+		</cc:MessageStripContainer>
+		<form:SimpleForm id="FormPwdId" layout="ResponsiveGridLayout">
+			<Input id="InputPwdId" type="Password" value="{/pwd}" placeholder="{i18n>dialogFileDownloadPwd.password}" valueLiveUpdate="true"
+				liveChange="onPasswordChange" submit="handleEnterPress"/>
+		</form:SimpleForm>
+		<Toolbar>
+			<ToolbarSpacer/>
+			<Button text="{i18n>dialogFileDownloadPwd.protect}" id="BtnProtectId" press="onPasswordProtect" type="Accept"/>
+			<Button text="{i18n>dialogFileDownloadPwd.cancel}" press="onCancel" type="Reject"/>
+		</Toolbar>
+	</Dialog>
+</core:FragmentDefinition>

@@ -1,0 +1,6 @@
+<mvc:View 
+	xmlns:mvc="sap.ui.core.mvc" 
+	xmlns="sap.m"
+	height="100%">
+	<MessagePage icon="sap-icon://lateness" text="{message>/0/message}" description="{libI18n>logon.reenter}" />
+</mvc:View>
