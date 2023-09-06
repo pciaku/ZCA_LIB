@@ -9,5 +9,12 @@
   "deploy": {
     "destination": "FioriGWD",
     "name": "ZCA_LIB"
+  },
+  "translation": {
+    "translationDomain": "",
+    "supportedLanguages": "",
+    "defaultLanguage": "",
+    "defaultI18NPropertyFile": "",
+    "resourceModelName": ""
   }
 }
